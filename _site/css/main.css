@@ -82,7 +82,7 @@ h1 {
 
 /* header styles*/
 .header {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.931);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -95,7 +95,8 @@ h1 {
 }
 
 .header-logo {
-  background-color: #000;
+  background-color:rgba(0, 0, 0, 0.931);
+  color: rgba(0, 0, 0, 0.931);
   box-sizing: border-box;
   display: block;
   height: 10vh;
@@ -107,6 +108,7 @@ h1 {
 
   .header-logo img {
     width: 15vh;
+    color: rgba(0, 0, 0, 0.931)
   }
 
 .header-nav > li {
@@ -115,7 +117,7 @@ h1 {
 }
 
 .header-nav > li ~ li {
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.931);
     padding-left: 1em;
 }
 
@@ -125,11 +127,11 @@ h1 {
 
   .header-nav a:hover,
   .header-nav a:active {
-  color: #ed6e2f;
+  color: #274f7c;
 }
 
-  .header-logo:active {
   .header-logo:hover,
+  .header-logo:active {
   opacity: 0.5;
   }
 
@@ -145,7 +147,7 @@ h1 {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a {
-  color: #ed6e2f;
+  /* color: #ed6e2f; */
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
@@ -153,13 +155,15 @@ h1 {
 
 /* FOOTER STYLES */
 .footer {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.931);
     padding: 10vh 0 15vh;
     text-align: center;
   }
 
   .footer-logo img {
-    width: 170px;
+    width: 30vh;
+    color: rgba(0, 0, 0, 0.931);
+    background-color: rgba(0, 0, 0, 0.931)
   }
 
   .footer h3 {
@@ -212,8 +216,9 @@ h1 {
 }
 
 .hero-home {
-    background-image: url(/images/cat-back.jpeg);
-    background-position: center top;    
+    background-image: url(/images/marilyn-back.jpg);
+    background-position: center top; 
+   
   }
 
   .hero-content {
@@ -221,7 +226,7 @@ h1 {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    top: 50%;
+    top: 70%;
     transform: translate(0, -50%);
   }
   .hero-content h1 {
@@ -229,12 +234,16 @@ h1 {
     font-size: 7vw;
     margin-bottom: 0.25em;
   }
+
+  .hero-content .mission {
+    color: rgb(70, 64, 64);
+  }
   .hero-content .social-link {
     background-color: rgba(255, 255, 255, 0.8);
     color: #557c83;
   }
   .hero-content .social-link:hover {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.931);
     color: #fff;
   }
 
@@ -292,7 +301,7 @@ h1 {
   .home-callout {
     display: flex;
     align-items: center;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.931);
     color: #fff;
     display: flex;
     padding: 7vh 0;
@@ -325,21 +334,22 @@ h1 {
   width: 33%;
 }
 .bio-box h3 {
-  color: #fff;
-  font-size: 1.5em;
-  margin: -40px 0 1em;
+  color: #aaa;
+  font-size: 1.8em;
+  margin: 0.5em 0 1em;
   text-align: center;
   text-transform: uppercase;
 }
 .bio-box img {
-  width: 100%;
+  /* width: 90%; */
+  
 }
 .bio-box .social-link {
     display: block;
     margin: 2em auto 1em;
   }
 .bio-copy {
-  font-size: 0.75em;
+  font-size: 1.5em;
   line-height: 1.5;
 }
 .bio-copy a {
